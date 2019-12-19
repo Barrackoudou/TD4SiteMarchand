@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/inscription.css" >
+    <meta charset="UTF-8" >
+    <title>Formulaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+<form method="post" action="welcome.html">
+    <fieldset id="field1" class="form-group">
+        <legend>Inscription</legend>
+
+
+        <div class="form-group row col-sm-10">
+            <input id="nom" type="text" class="form-control" required placeholder="Nom" minlength="2" maxlength="30">
+            <input id="prenom" type="text" class="form-control" required placeholder="Prénom" minlength="2" maxlength="30">
+            <input id="datedenaissance" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Date de Naissance" required>
+            <input id="adresse" type="text" class="form-control" required placeholder="Adresse postale" minlength="2" maxlength="100">
+            <input id="cp" type="text" class="form-control" pattern="[0-9]{5}" placeholder="Saisir votre code postal">
+            <select name="ville" id="ville" class="form-control" required>
+                <option value="">Merci de choisir une ville</option>
+                <option value="">Béthune</option>
+                <option value="">Douai</option>
+                <option value="">Lens</option>
+                <option value="">Lille</option>
+            </select>
+        </div>
+
+
+        <div class="form-group row col-sm-10">
+            <input id="mail" type="email" class="form-control" required placeholder="Adresse-mail" size="20" minlength="2" maxlength="50">
+            <input id="tel" type="tel" class="form-control" required placeholder="Téléphone" size="20" pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}">
+        </div>
+
+        <div class="form-group row col-sm-10">
+            <input id="mdp" class="form-control" type="password" required placeholder="Saisir votre mot de passe">
+            <input id="mdpconfirm" class="form-control" type="password" required placeholder="Confirmer le mot de passe">
+        </div>
+        <div id="cgu2" class="form-check">
+            <label for="cgu" class="form-check-label">
+            <input id="cgu" type="checkbox" class="form-check-input">
+                Souhaitez vous recevoir notre newsletter ?
+            </label>
+        </div>
+
+        <div id="bouton">
+            <button type="submit" class="btn btn-outline-warning">Valider</button>
+            <button type="reset" class="btn btn-outline-warning">Annuler</button>
+        </div>
+
+    </fieldset>
+</form>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #343a40;
+}
+.d-block{
+    height: 1080px ;
+    width: 1920px ;
+}
+button{
+    margin-bottom: 1% ;
+}
+#article{
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2%;
+}
+#article form{
+    margin-left: 17%;
+}
+article{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    border: black solid 1px;
+    box-shadow: black 2px 2px 2px 2px;
+    border-radius: 40px;
+    height: content-box;
+    background-color: #1e1e26;
+}
+.card{
+    border: 1px #fec107 solid;
+    height: 20rem;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px black ;
+}
+.card img{
+    border:1px solid #fec107;
+    height: 10rem;
+    border-radius: 25px;
+}
+.checked {
+    color: orange;
+}
+.avisclient{
+    display: flex;
+}
+.avisclient p{
+    font-weight: bold;
+}
+.etoile{
+    margin-left: 5%;
+}
+.avisclient span{
+    margin-top: 1.5%;
+}
+#carousel{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 98%;
+    box-shadow: 2px 2px 2px 2px black ;
+}
+#carousel img{
+    border: 1px solid #fec107 ;
+    border-radius: 10px;
+}
+header{
+    width: 98%;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    color: #fec107;
+    margin-top: 0.5%;
+}
+#article input{
+    width: 40vw;
+}
+#article button{
+    width: 10vw;
+    height: 4vh;
+}
+footer{
+    background-color: #1e1e26;
+    color: #fec107;
+    width: 98%;
+    border-radius: 15px;
+    margin-top: 5%;
+    box-shadow: 2px 2px 2px 2px black ;
+    margin-bottom: 0.5%;
+}
+a{
+    color: #fec107;
+}
+summary{
+    margin-top: 2%;
+}
+details{
+}
+.item{
+    background-color: #1e1e26;
+}
+a:hover{
+    color: #fec107;
+}
